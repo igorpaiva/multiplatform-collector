@@ -6,7 +6,7 @@ target_include_directories(MultiplatformCollector PUBLIC ${CMAKE_CURRENT_SOURCE_
 
 add_executable(collector main.cpp)
 
-target_link_libraries(collector PRIVATE MultiplatformCollector)
+target_link_libraries(collector PRIVATE MultiplatformCollector glog::glog)
 
 if(WIN32)
     # TODO
